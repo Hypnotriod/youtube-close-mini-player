@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Close YouTube 'Continue Watching'",
+    "version": "1.0",
+    "description": "Close the YouTube 'Continue Watching' mini-player",
+    "host_permissions": [
+        "https://www.youtube.com/"
+    ],
+    "icons": {
+        "64": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
